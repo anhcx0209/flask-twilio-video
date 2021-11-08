@@ -100,7 +100,7 @@ function participantConnected(participant) {
     labelDiv.innerHTML = participant.identity;
     participantDiv.appendChild(labelDiv);
 
-    // container.appendChild(participantDiv);
+    container.appendChild(participantDiv);
 
     participant.tracks.forEach(publication => {
         if (publication.isSubscribed)

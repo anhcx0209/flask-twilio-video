@@ -8,22 +8,21 @@
         <div id="root" class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <h1>Phòng thi online - Giao diện dành cho thí sinh</h1>
+                    <h1>Phòng thi online - Giao diện dành cho giám thị</h1>
                     
                     <form class="mt-5">
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="username">Họ tên thí sinh</label>
-                                    <input type="text" class="form-control" name=”username” id="username">
+                                    <label for="username" hidden>Họ tên thí sinh</label>
+                                    <input type="text" class="form-control" name=”username” id="username" value="teacher" hidden>
                                 </div>
                             </div>
 
                             <div class="col">                                
                                 <label for="action"></label>
-                                <div class="form-group">
-                                    
-                                    <button class="btn btn-primary" id="join_leave">Tham gia</button>
+                                <div class="form-group">                                
+                                    <button class="btn btn-primary" id="join_leave">Bắt đầu phòng thi</button>
                                     <button id="share_screen" hidden disabled>Share screen</button>
                                     <button id="toggle_chat" hidden disabled>Toggle chat</button>
                                 </div>
@@ -58,6 +57,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
         <script src="https://media.twiliocdn.com/sdk/js/conversations/releases/1.0.0/twilio-conversations.min.js"></script>
-        <script src="{{ url_for('static', filename='app.js') }}"></script>
+        <script src="{{ url_for('static', filename='app2.js') }}"></script>
     </body>
 </html>

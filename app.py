@@ -31,6 +31,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/supervisor')
+def supervisor():
+    return render_template('supervisor.html')
+
+
 @app.route('/login', methods=['POST'])
 def login():
     username = request.get_json(force=True).get('username')
